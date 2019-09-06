@@ -1,6 +1,7 @@
 codemix.cleanup.bindings=true
 codemix.fixed.editors=true
 codemix.livechat.feedback=1565323569811
+codemix.livechat.feedback.displayed=true
 codemix.showed.view=true
 codemix.showed.welcome=true
 eclipse.preferences.version=1
