@@ -1,0 +1,7 @@
+[2019-11-11 16:20:33.013] [renderer1] [info] 2019-11-11T07:20:32.996Z - [viper-service] ViperService is initializing
+[2019-11-11 16:20:33.401] [renderer1] [error] Unexpected end of JSON input: SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at ColorThemeData.injectViperColors (file:///C:/Users/multicampus/Downloads/eclipse-jee-photon-R-win32-x86_64/eclipse/plugins/com.genuitec.eclipse.code.engine.app.win32.x86_64_3.6.0.201910290238/engine/resources/app/out/vs/workbench/workbench.main.js:228249:28)
+    at themeData.ensureLoaded.then._ (file:///C:/Users/multicampus/Downloads/eclipse-jee-photon-R-win32-x86_64/eclipse/plugins/com.genuitec.eclipse.code.engine.app.win32.x86_64_3.6.0.201910290238/engine/resources/app/out/vs/workbench/workbench.main.js:288559:31)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-11-11 16:20:34.260] [renderer1] [info] 2019-11-11T07:20:34.260Z - [websocket] Connection Error: Error: connect ECONNREFUSED 127.0.0.1:56573

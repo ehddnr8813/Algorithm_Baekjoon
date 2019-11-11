@@ -1,0 +1,14 @@
+{
+    "telemetry.machineId": "da8152445873f39e36f420ecf1a0bd067b14d42fbf5d6f013811c9ab02670fb2",
+    "openedPathsList": {
+        "workspaces3": [
+            {
+                "id": "f5b1be3e2cd1798442e657191ca2a169",
+                "configURIPath": "file:///c%3A/ssafy/.metadata/codemix.code-workspace"
+            }
+        ],
+        "files2": []
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#1e1e1e"
+}
