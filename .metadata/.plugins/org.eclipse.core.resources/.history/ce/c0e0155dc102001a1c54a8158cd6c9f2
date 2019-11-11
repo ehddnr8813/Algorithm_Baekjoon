@@ -1,0 +1,40 @@
+package kakao;
+
+public class Solution5 {
+
+	static int count, answer;
+	
+	public static void main(String[] args) {
+		solution(new int[]{2, 4, 5, 3, 2, 1, 4, 2, 5, 1}, 3);
+
+	}
+	
+    public static int solution(int[] stones, int k) {
+ loop:   while(true){
+    		answer++;
+        	for(int i=0; i<stones.length; i++){
+        		if(stones[i]==0)continue;
+        		if(--stones[i]==0){
+        			int index=i;
+        			while(true){
+        				count=1;
+        				if(--index<0)break;
+        				if(stones[index]==0)count++;
+        				else break;
+        				if(count==k)break loop;
+        			}
+        			index=i;
+        			while(true){
+        				count=1;
+        				if(++index==stones.length)break;
+        				if(stones[index]==0)count++;
+        				else break;
+        				if(count==k)break loop;
+        			}
+        		}
+        	}
+    	}
+    	System.out.println(answer);
+        return answer;
+    }
+}

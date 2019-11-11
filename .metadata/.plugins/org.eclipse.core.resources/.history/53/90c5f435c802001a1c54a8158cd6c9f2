@@ -1,0 +1,44 @@
+package kakao;
+
+public class Solution3 {
+
+	static boolean visited[]=new boolean[8];
+	static int answer;
+	
+	
+	public static void main(String[] args) {
+		solution(new String[]{"frodo"}, new String[]{"fr*d*"});
+	}
+	
+    public static int solution(String[] user_id, String[] banned_id) {
+    	dfs(user_id[0],banned_id,0,user_id[0].length());
+        int answer = 0;
+        return answer;
+    }
+    static void dfs(String a, String[] b,int index, int len){
+    	isMatch(a, b);
+    	if(index==len){
+    		return;
+    	}
+    	for(int i=index;i<len; i++){
+    		if(!visited[i]){
+    			visited[i]=true;
+    			dfs(a,b,index+1, len);
+    			visited[i]=false;
+    		}
+    	}
+    }
+
+	private static void isMatch(String ex, String[] ori) {
+		String str= new String(ex);
+		for(int i=0; i<str.length(); i++){
+			if(visited[i])
+				str=str.replaceFirst(str.charAt(i)+"", "*");
+		}
+		System.out.println(str);
+		for(String s : ori){
+			if(str.equals(s))answer++;
+			break;
+		}
+	}
+}

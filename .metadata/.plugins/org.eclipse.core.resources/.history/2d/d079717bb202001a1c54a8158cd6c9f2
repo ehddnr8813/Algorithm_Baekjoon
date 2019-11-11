@@ -1,0 +1,17 @@
+package kakao;
+
+
+public class Solution2 {
+
+	public static void main(String[] args) {
+		solution("{{2},{2,1},{2,1,3},{2,1,3,4}}");
+	}
+	
+    public static int[] solution(String s) {
+    	s=s.substring(2, s.length()-2);
+    	System.out.println(s);
+        int[] answer = {};
+        return answer;
+    }
+
+}

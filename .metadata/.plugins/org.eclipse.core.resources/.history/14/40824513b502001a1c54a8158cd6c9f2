@@ -1,0 +1,39 @@
+package kakao;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Solution2 {
+	
+	static boolean visited[]= new boolean[1000001];
+	
+	public static void main(String[] args) {
+		solution("{{1,2,3},{2,1},{1,2,4,3},{2}}");
+	}
+	
+    public static int[] solution(String s) {
+    	s=s.substring(2, s.length()-2);
+    	String [] str=s.split("\\}\\,\\{");
+    	Arrays.sort(str);
+    	ArrayList<Integer> list= new ArrayList<>();
+    	for(int i=0; i<str.length; i++){
+    		for(int j=0; j<str[i].length(); j+=2){
+    			list.add(str[i].charAt(j)-'0');
+    		}
+    	}
+    	for(int i=0; i<list.size(); i++){
+    		if(visited[list.get(i)]){
+    			list.remove(i);
+    			i--;
+    		}
+    		visited[list.get(i)]=true;
+    	}
+    	int[] answer = new int[str.length];
+    	for(int i=0; i<answer.length; i++){
+    		answer[i]=list.get(i);
+    	}
+    	System.out.println(Arrays.toString(answer));
+        return answer;
+    }
+
+}

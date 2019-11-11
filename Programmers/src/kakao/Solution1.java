@@ -1,0 +1,58 @@
+package kakao;
+
+import java.util.ArrayList;
+
+public class Solution1 {
+
+	static int map[][];
+	static int N, answer;
+	static ArrayList<Integer> list= new ArrayList<>();
+	
+	public static void main(String[] args) {
+		solution(new int[][]{{1,1,1,1,1},{1,1,1,1,1},{1,1,1,1,1},{1,1,1,1,1},{1,1,1,1,1}},new int[]{1,5,3,5,1,2,1,4});
+		System.out.println(answer);
+	}
+	
+    public static int solution(int[][] board, int[] moves) {
+    	N=board.length;
+    	map= new int[N][N];
+    	for(int i=0; i<N; i++){
+    		map[i]=board[i].clone();
+    	}
+    	for(int i=0; i<moves.length; i++){
+    		int a=getTop(moves[i]-1);
+    		if(a!=-1){
+    			list.add(a);
+    			make();
+    		}
+    	} 	
+    	return answer;
+    }
+
+	private static void make() {
+		int len=list.size();
+		while(true){
+			len=list.size();
+			if(len<2)break;
+			if(list.get(len-1)==list.get(len-2)){
+				list.remove(len-1);
+				list.remove(len-2);
+				answer+=2;
+			}
+			else if(list.get(len-1)!=list.get(len-2))break;
+		}
+	}
+
+	private static int getTop(int index) {
+		int ret=-1;
+		for(int i=0; i<N; i++){
+			if(map[i][index]!=0){
+				ret=map[i][index];
+				map[i][index]=0;
+				return ret;
+			}
+		}
+		return ret;
+	}
+
+}
