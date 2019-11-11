@@ -700,7 +700,7 @@
         <tags>EditorStack</tags>
         <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="_kemLMAQuEeqPc7fSliPPug" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Main.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Main.java&quot; partName=&quot;Main.java&quot; title=&quot;Main.java&quot; tooltip=&quot;BeakJoon/src/baek17780/Main.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/BeakJoon/src/baek17780/Main.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;942&quot; selectionTopPixel=&quot;500&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Main.java&quot; partName=&quot;Main.java&quot; title=&quot;Main.java&quot; tooltip=&quot;BeakJoon/src/baek17780/Main.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/BeakJoon/src/baek17780/Main.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2578&quot; selectionTopPixel=&quot;1523&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
@@ -1155,7 +1155,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_lDBmb8SzEemt_vxxJaSqMw" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_44Vy4AQrEeqPc7fSliPPug" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_lDB0hsSzEemt_vxxJaSqMw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_1Ch3wARTEeqgiKVuIXDxyg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_lDB0hsSzEemt_vxxJaSqMw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_lDBmfMSzEemt_vxxJaSqMw" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -1205,7 +1205,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_lDBm8MSzEemt_vxxJaSqMw" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_44aEUAQrEeqPc7fSliPPug" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_lDB0GMSzEemt_vxxJaSqMw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_1CjF4QRTEeqgiKVuIXDxyg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_lDB0GMSzEemt_vxxJaSqMw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_lDBm-sSzEemt_vxxJaSqMw" elementId="com.genuitec.eclipse.code.css" visible="false">
         <tags>Draggable</tags>
@@ -1802,7 +1802,6 @@
     <bindings xmi:id="_lDBoo8SzEemt_vxxJaSqMw" keySequence="CTRL+O" command="_lDBzS8SzEemt_vxxJaSqMw"/>
     <bindings xmi:id="_lDBopMSzEemt_vxxJaSqMw" keySequence="CTRL+SHIFT+b" command="_lDB1QcSzEemt_vxxJaSqMw"/>
     <bindings xmi:id="_lDBopcSzEemt_vxxJaSqMw" keySequence="CTRL+D" command="_lDBx2MSzEemt_vxxJaSqMw"/>
-    <bindings xmi:id="_lDBopsSzEemt_vxxJaSqMw" keySequence="ALT+CTRL+W" command="_lDBz9cSzEemt_vxxJaSqMw"/>
     <bindings xmi:id="_lDBop8SzEemt_vxxJaSqMw" keySequence="CTRL+SHIFT+X" command="_lDBxzsSzEemt_vxxJaSqMw"/>
     <bindings xmi:id="_lDBoqMSzEemt_vxxJaSqMw" keySequence="CTRL+SHIFT+Y" command="_lDBw7sSzEemt_vxxJaSqMw"/>
     <bindings xmi:id="_lDBoqcSzEemt_vxxJaSqMw" keySequence="CTRL+SHIFT+[" command="_lDBxRsSzEemt_vxxJaSqMw"/>
@@ -4411,6 +4410,18 @@
   <commands xmi:id="_lDB2IsSzEemt_vxxJaSqMw" elementId="com.genuitec.eclipse.code.generateThemeMappings" commandName="Generate Theme Mappings" category="_lDB2PcSzEemt_vxxJaSqMw"/>
   <commands xmi:id="_HamAwe5GEemA7b2G4ofwRg" elementId="com.genuitec.eclipse.code.force.restart.engine" commandName="Force Restart CodeMix Engine" category="_lDB2PcSzEemt_vxxJaSqMw"/>
   <commands xmi:id="_HamAwu5GEemA7b2G4ofwRg" elementId="com.genuitec.eclipse.code.reload.engine" commandName="Reload CodeMix Engine" category="_lDB2PcSzEemt_vxxJaSqMw"/>
+  <commands xmi:id="_0X3xMQRTEeqgiKVuIXDxyg" elementId="com.genuitec.eclipse.code.controlpanel.open-terminal" commandName="Open in Terminal+" category="_lDB2PcSzEemt_vxxJaSqMw"/>
+  <commands xmi:id="_0X4YQARTEeqgiKVuIXDxyg" elementId="codemix.control.panel.command" commandName="Show Control Panel" category="_lDB2TcSzEemt_vxxJaSqMw"/>
+  <commands xmi:id="_0X4YQQRTEeqgiKVuIXDxyg" elementId="com.genuitec.eclipse.code.controlpanel.npm-install" commandName="Execute npm install" category="_lDB2PcSzEemt_vxxJaSqMw"/>
+  <commands xmi:id="_0X4YQgRTEeqgiKVuIXDxyg" elementId="com.genuitec.eclipse.code.controlpanel.npm-audit" commandName="Execute npm audit" category="_lDB2PcSzEemt_vxxJaSqMw"/>
+  <commands xmi:id="_0X4YQwRTEeqgiKVuIXDxyg" elementId="com.genuitec.eclipse.code.controlpanel.chrome-debug" commandName="Debug in Chrome" category="_lDB2PcSzEemt_vxxJaSqMw"/>
+  <commands xmi:id="_0X4YRARTEeqgiKVuIXDxyg" elementId="com.genuitec.eclipse.code.controlpanel.linting" commandName="Run Linting Task" category="_lDB2PcSzEemt_vxxJaSqMw"/>
+  <commands xmi:id="_0X4YRQRTEeqgiKVuIXDxyg" elementId="com.genuitec.eclipse.code.controlpanel.open-in-browser" commandName="Open in Browser" category="_lDB2PcSzEemt_vxxJaSqMw"/>
+  <commands xmi:id="_0X4YRgRTEeqgiKVuIXDxyg" elementId="com.genuitec.eclipse.code.controlpanel.build" commandName="Build Project" category="_lDB2PcSzEemt_vxxJaSqMw"/>
+  <commands xmi:id="_0X4YRwRTEeqgiKVuIXDxyg" elementId="com.genuitec.eclipse.code.controlpanel.generate-component" commandName="Generate Element" category="_lDB2PcSzEemt_vxxJaSqMw"/>
+  <commands xmi:id="_0X4YSARTEeqgiKVuIXDxyg" elementId="com.genuitec.eclipse.code.controlpanel.validation" commandName="Watch for Errors" category="_lDB2PcSzEemt_vxxJaSqMw"/>
+  <commands xmi:id="_0X4YSQRTEeqgiKVuIXDxyg" elementId="com.genuitec.eclipse.code.controlpanel.serve" commandName="Serve Application" category="_lDB2PcSzEemt_vxxJaSqMw"/>
+  <commands xmi:id="_0X4YSgRTEeqgiKVuIXDxyg" elementId="com.genuitec.eclipse.code.controlpanel.editor-behavior" commandName="Adjust Editor Behavior" category="_lDB2PcSzEemt_vxxJaSqMw"/>
   <addons xmi:id="_lDB2I8SzEemt_vxxJaSqMw" elementId="org.eclipse.e4.core.commands.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_lDB2JMSzEemt_vxxJaSqMw" elementId="org.eclipse.e4.ui.contexts.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_lDB2JcSzEemt_vxxJaSqMw" elementId="org.eclipse.e4.ui.bindings.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
