@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="conditionHistory">
-		<item value="selected[0]==4 &amp;&amp; selected[1]==5 &amp;&amp; selected[2]==6" key="conditionHistoryEntry_8"/>
+		<item value="startX=6 &amp;&amp; startY=6" key="conditionHistoryEntry_8"/>
 		<item value="selected[0]==1 &amp;&amp; selected[1]==1 &amp;&amp; selected[2]==1" key="conditionHistoryEntry_9"/>
-		<item value="startX=6 &amp; startY=6" key="conditionHistoryEntry_6"/>
-		<item value="startX=6 &amp;&amp; startY=6" key="conditionHistoryEntry_7"/>
-		<item value="8" key="conditionHistoryEntryCount"/>
-		<item value="visited[0]==2 &amp;&amp; visited[1]==2 &amp;&amp; visited[2]==6" key="conditionHistoryEntry_0"/>
-		<item value="startY==6  &amp;&amp; startX==6" key="conditionHistoryEntry_1"/>
-		<item value="startX==6 &amp;&amp; startY==6" key="conditionHistoryEntry_4"/>
-		<item value="startX==6 &amp; startY==6" key="conditionHistoryEntry_5"/>
-		<item value="Y==6  &amp;&amp; X==6" key="conditionHistoryEntry_2"/>
-		<item value="startY==6&#x0D;&#x0A;" key="conditionHistoryEntry_3"/>
+		<item value="startX==6 &amp; startY==6" key="conditionHistoryEntry_6"/>
+		<item value="startX=6 &amp; startY=6" key="conditionHistoryEntry_7"/>
+		<item value="9" key="conditionHistoryEntryCount"/>
+		<item value="number[0]==3 &amp;&amp; number[1]==2 &amp;&amp; number[2]==9" key="conditionHistoryEntry_0"/>
+		<item value="visited[0]==2 &amp;&amp; visited[1]==2 &amp;&amp; visited[2]==6" key="conditionHistoryEntry_1"/>
+		<item value="startY==6&#x0D;&#x0A;" key="conditionHistoryEntry_4"/>
+		<item value="startX==6 &amp;&amp; startY==6" key="conditionHistoryEntry_5"/>
+		<item value="startY==6  &amp;&amp; startX==6" key="conditionHistoryEntry_2"/>
+		<item value="Y==6  &amp;&amp; X==6" key="conditionHistoryEntry_3"/>
 	</section>
 	<section name="org.eclipse.jdt.internal.debug.ui.ExpressionInformationControlCreator$ExpressionInformationControl">
 		<item value="500" key="SashWeightTree"/>
