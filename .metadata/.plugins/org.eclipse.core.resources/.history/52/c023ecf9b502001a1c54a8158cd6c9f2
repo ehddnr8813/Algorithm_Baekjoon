@@ -1,0 +1,53 @@
+package kakao;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+
+public class Solution2 {
+	
+	static boolean visited[]= new boolean[1000001];
+	
+	public static void main(String[] args) {
+		solution("{{123}}");
+	}
+	
+    public static int[] solution(String s) {
+    	s=s.substring(2, s.length()-2);
+    	String [] str=s.split("\\}\\,\\{");
+    	ArrayList<String> strList= new ArrayList<>();
+    	for(int i=0; i<str.length; i++){
+    		strList.add(str[i]);
+    	}
+    	
+    	Collections.sort(strList, new Comparator<String>() {
+			@Override
+			public int compare(String o1, String o2) {
+				return o1.length()-o2.length();
+			}
+		});
+    	System.out.println(strList.get(0));
+    	ArrayList<Integer> list= new ArrayList<>();
+    	for(int i=0; i<strList.size(); i++){
+    		for(int j=0; j<strList.get(i).length(); j+=2){
+    			list.add(strList.get(i).charAt(j)-'0');
+    		}
+    	}
+    	for(int i=0; i<list.size(); i++){
+    		if(visited[list.get(i)]){
+    			list.remove(i);
+    			i--;
+    		}
+    		visited[list.get(i)]=true;
+    	}
+    	int[] answer = new int[str.length];
+    	for(int i=0; i<answer.length; i++){
+    		answer[i]=list.get(i);
+    	}
+    	System.out.println(Arrays.toString(answer));
+        return answer;
+    }
+
+}

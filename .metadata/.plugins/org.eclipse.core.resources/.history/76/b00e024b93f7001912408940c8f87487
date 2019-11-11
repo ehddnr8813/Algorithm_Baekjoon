@@ -1,0 +1,104 @@
+package wintercoding;
+
+import java.util.ArrayList;
+
+public class Solution {
+
+	static int dx[]= new int[]{1,0,-1,0};
+	static int dy[]= new int[]{0,1,0,-1};
+	
+	static int[][] visited;
+	static boolean[][] check;
+	static boolean[] visitIsland;
+	static int N,count=1, diff, answer=Integer.MAX_VALUE;
+	static int map[][];
+	
+	static int dx2[] = new int[]{1,0};
+	static int dy2[]= new int[]{0,1};
+	
+	public static void main(String[] args) {
+		solution(new int[][]{{1,4,8,10},{5,5,5,5},{10,10,10,10},{10,10,10,20}},3);
+
+	}
+	
+    public static int solution(int[][] land, int height) {
+    	N=land.length;
+    	diff=height;
+    	map= new int[N][N];
+    	for(int i=0; i<N; i++){
+    		map[i]=land[i].clone();
+    	}
+    	simulate();
+        int answer = 0;
+        return answer;
+    }
+
+	private static void simulate() {
+		visited=new int[N][N];
+		for(int i=0; i<N; i++){
+			for(int j=0; j<N; j++){
+				if(visited[i][j]==0){
+					visited[i][j]=count;
+					dfs(j,i, count);
+					count++;
+				}
+			}
+		}
+		visitIsland= new boolean[count];
+		dfs2(0,0,0,0);
+		System.out.println(answer);
+	}
+	
+	private static void dfs2(int x, int y, int count, int total) {
+		if(count==2){
+			if(allVisited()){
+				answer= answer > total ? total: answer;
+			}
+			return;
+		}
+		
+		for(int i=y; i<N; i++){
+			for(int j=x; j<N; j++){
+				for(int k=0; k<2; k++){
+					int nx=j+dx[k];
+					int ny=i+dy[k];
+					if(nx<0 || ny<0 || nx>=N || ny>=N || visited[ny][nx]==visited[i][j])continue;
+					visitIsland[visited[i][j]]=true;
+					visitIsland[visited[ny][nx]]=true;
+					dfs2(j, i, count+1, total+Math.abs(map[ny][nx]-map[i][j]));
+					visitIsland[visited[ny][nx]]=false;
+					visitIsland[visited[i][j]]=false;
+				}
+			}
+		}
+	}
+
+	private static void dfs(int x, int y, int count) {
+		for(int k=0; k<4; k++){
+			int nx=x+dx[k];
+			int ny=y+dy[k];
+			if(nx<0 || ny<0 || nx>=N || ny>=N || visited[ny][nx]!=0)continue;
+			if(Math.abs(map[ny][nx]-map[y][x])>diff)continue;
+			visited[ny][nx]=count;
+			dfs(nx, ny, count);
+		}
+	}
+	
+	static boolean allVisited(){
+		for(int i=1; i<count; i++){
+			if(!visitIsland[i])return false;
+		}
+		return true;
+	}
+
+	static class Node{
+		int x;
+		int y;
+		public Node(int x, int y) {
+			super();
+			this.x = x;
+			this.y = y;
+		}
+	}
+
+}

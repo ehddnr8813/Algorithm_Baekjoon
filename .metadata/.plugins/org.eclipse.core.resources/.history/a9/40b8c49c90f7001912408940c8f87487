@@ -1,0 +1,47 @@
+package wintercoding;
+
+public class Solution {
+
+	static int dx[]= new int[]{1,0,-1,0};
+	static int dy[]= new int[]{0,1,0,-1};
+	
+	static boolean[][] visited;
+	static int N;
+	static int map[][];
+	static ArrayList<Node> list[];
+	
+	public static void main(String[] args) {
+	
+
+	}
+	
+    public int solution(int[][] land, int height) {
+    	N=land.length;
+    	map= new int[N][N];
+    	for(int i=0; i<N; i++){
+    		map[i]=land[i].clone();
+    	}
+    	simulate();
+        int answer = 0;
+        return answer;
+    }
+
+	private void simulate() {
+		visited=new boolean[N][N];
+		for(int i=0; i<N; i++){
+			
+		}
+		
+	}
+	
+	static class Node{
+		int x;
+		int y;
+		public Node(int x, int y) {
+			super();
+			this.x = x;
+			this.y = y;
+		}
+	}
+
+}
